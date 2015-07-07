@@ -14,18 +14,9 @@
 
 #features.container
   .row
-    .col-md-4
-      .no-code.feature-icon
-      %h2 No code
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate quidem, a explicabo.
-    .col-md-4
-      .conversions.feature-icon
-      %h2 Increase conversions
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate quidem, a explicabo.
-    .col-md-4
-      .no-boring.feature-icon
-      %h2 No more boring sites
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate quidem, a explicabo.
+    = feature_landing('no-code feature-icon', 'No code', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate quidem, a explicabo.')
+    = feature_landing('conversions feature-icon', 'Increase conversions', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate quidem, a explicabo.')
+    = feature_landing('no-boring feature-icon', 'No more boring sites', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate quidem, a explicabo.')
 
 = title ('Wiggle Landing')
 
