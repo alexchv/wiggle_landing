@@ -1,0 +1,43 @@
+.hero-block.container-fluid
+  .wiggle-logo
+    = image_tag('content/wiggle-logo.png')
+  %h1 Why should designers have all the fun
+  = render({:partial => 'users/form'})
+
+  %div
+    -#%button.login{:type => "button"} Log in
+  .more-down
+    %p Learn more
+    %p
+      %a{:href => "#features"}
+        = image_tag('content/down-arrow.png')
+
+#features.container
+  .row
+    .col-md-4
+      .no-code.feature-icon
+      %h2 No code
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate quidem, a explicabo.
+    .col-md-4
+      .conversions.feature-icon
+      %h2 Increase conversions
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate quidem, a explicabo.
+    .col-md-4
+      .no-boring.feature-icon
+      %h2 No more boring sites
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur voluptate quidem, a explicabo.
+
+-#.try-for-free.container-fluid
+-#  %h3 Try Wiggle for free
+-#
+-#  %form#wiggle-for-free.user-url
+-#    %input#user-url-free.inner-input{:type => "url"}
+-#    %label{:for => "user-url-free"} Website URL
+-#    %input.submit-button{:type => "submit", :value => "Let's wiggle"}
+-#
+-#  .footer-info-links.row
+-#    .info-links.col-md-6
+-#      %a{:href => "#"} Help
+-#      %a{:href => "#"} Terms and Conditions
+-#    .cr-info-block.col-md-6
+-#      %p Supers Inc. 2015

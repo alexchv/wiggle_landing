@@ -1,0 +1,10 @@
+<% if @user.errors.any? %>
+console.log('<%= @user.errors.full_messages[0] %>');
+    $.bootstrapGrowl('<%= @user.errors.full_messages[0] %>',
+                     {type: 'danger'});
+<% else %>
+    $.bootstrapGrowl('Successfully subscribed for Wiggle email notifications',
+                     {type: 'success'});
+<% end %>
+
+$('#lets-wiggle').replaceWith('<%= j(render({:partial => 'users/form'})) %>');
