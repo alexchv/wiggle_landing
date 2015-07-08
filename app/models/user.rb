@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   private
 
     def push_to_firebase_db
-      FIREBASE_CLIENT.push(:subscribers, { :email => self.email, :created => Firebase::ServerValue::TIMESTAMP })
+      FIREBASE_CLIENT.push(:subscribers, { :email => self.email, :created => I18n.l(User.last.created_at) })
     end
 
 end
