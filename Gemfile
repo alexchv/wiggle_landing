@@ -19,6 +19,7 @@ gem 'autoprefixer-rails'                                   # Parse CSS and add v
 gem 'haml-rails'                                           # Haml-rails provides Haml generators for Rails 3. It also enables Haml as the templating engine for you, so you don't have to screw around in your own application.rb when your Gemfile already clearly indicated what templating engine you have installed. Hurrah.
 gem 'inherited_resources'                                  # Inherited Resources speeds up development by making your controllers inherit all restful actions so you just have to focus on what is important.
 gem 'email_validator'                                      # An email validator for Rails 3+. See homepage for details: http://github.com/balexand/email_validator
+gem 'firebase'                                             # Ruby wrapper for the Firebase REST API.
 
 group :staging, :production do
   gem 'rails_12factor'                                     # Makes running your Rails app easier. Based on the ideas behind 12factor.net

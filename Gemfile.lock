@@ -55,6 +55,9 @@ GEM
       activemodel
     erubis (2.7.0)
     execjs (2.5.2)
+    firebase (0.2.4)
+      httpclient
+      json
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     haml (4.0.6)
@@ -74,6 +77,7 @@ GEM
       haml (~> 4.0.0)
       nokogiri (~> 1.6.0)
       ruby_parser (~> 3.5)
+    httpclient (2.6.0.1)
     i18n (0.7.0)
     inherited_resources (1.6.0)
       actionpack (>= 3.2, < 5)
@@ -173,6 +177,7 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.0.0)
   email_validator
+  firebase
   haml-rails
   inherited_resources
   jbuilder (~> 2.0)

@@ -7,4 +7,4 @@ console.log('<%= @user.errors.full_messages[0] %>');
                      {type: 'success'});
 <% end %>
 
-$('#lets-wiggle').replaceWith('<%= j(render({:partial => 'users/form'})) %>');
+$('form').replaceWith('<%= j(render({:partial => 'users/form'})) %>');
