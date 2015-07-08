@@ -20,17 +20,18 @@
 
 = title ('Wiggle Landing')
 
--#.try-for-free.container-fluid
--#  %h3 Try Wiggle for free
--#
--#  %form#wiggle-for-free.user-url
--#    %input#user-url-free.inner-input{:type => "url"}
--#    %label{:for => "user-url-free"} Website URL
--#    %input.submit-button{:type => "submit", :value => "Let's wiggle"}
--#
--#  .footer-info-links.row
--#    .info-links.col-md-6
--#      %a{:href => "#"} Help
--#      %a{:href => "#"} Terms and Conditions
--#    .cr-info-block.col-md-6
--#      %p Supers Inc. 2015
+.try-for-free.container-fluid
+  %h3 Try Wiggle for free
+
+  = render({:partial => 'users/form'})
+  -#%form#wiggle-for-free.user-url
+  -#  %input#user-url-free.inner-input{:type => "url"}
+  -#  %label{:for => "user-url-free"} Website URL
+  -#  %input.submit-button{:type => "submit", :value => "Let's wiggle"}
+
+  .footer-info-links.row
+    .info-links.col-md-6
+      %a{:href => "#"} Help
+      %a{:href => "#"} Terms and Conditions
+    .cr-info-block.col-md-6
+      %p Supers Inc. 2015

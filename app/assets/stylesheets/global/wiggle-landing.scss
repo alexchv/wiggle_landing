@@ -6,6 +6,10 @@
 html {
 	height: 100%;
 }
+body {
+	height: 100%;
+	margin: 0;
+}
 button {
 	border: 0;
 	border-radius: 3px;
@@ -50,6 +54,7 @@ h3 {
 	}
 }
 .hero-block {
+	position: relative;
 	min-height: 100%;
 	padding: 35px 20px;
 	background-color: #e4f0ed;
@@ -69,6 +74,9 @@ h3 {
 		border: 3px solid #fff;
 	}
 	.more-down {
+		position: absolute;
+		left: 47%;
+		bottom: 30px;
 		p {
 			color: #ff4100;
 		}
