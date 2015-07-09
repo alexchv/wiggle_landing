@@ -1,1 +1,1 @@
-FIREBASE_CLIENT = Firebase::Client.new('https://blistering-inferno-2112.firebaseio.com/')
+FIREBASE_CLIENT = Firebase::Client.new('https://blistering-heat-7616.firebaseio.com/')
